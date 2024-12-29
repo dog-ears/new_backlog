@@ -1,10 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import SignIn from "@/lib/auth/components/sign-in";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        <SignIn />
         <Image
           className={styles.logo}
           src="/next.svg"
