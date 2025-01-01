@@ -1,0 +1,13 @@
+.btnBasic {
+  display: inline;
+  padding: 0.6rem 1.6rem;
+  border: 1px solid var(--btnborder);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background: var(--btnbg);
+  &:hover {
+    background-color: var(--foreground);
+    color: var(--background);
+  }
+}

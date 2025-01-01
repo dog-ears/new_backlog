@@ -1,15 +1,16 @@
-import { signIn } from "@/lib/auth/auth";
+import { signOut } from "@/lib/auth/auth";
 import commonStyles from "@/app/common.module.css";
-export default async function SignIn() {
+
+export default async function SignOut() {
   return (
     <form
       action={async () => {
         "use server";
-        await signIn("google", { redirectTo: "/dashboard" });
+        await signOut();
       }}
     >
       <button type="submit" className={commonStyles.btnBasic}>
-        ログイン
+        ログアウト
       </button>
     </form>
   );
