@@ -1,0 +1,8 @@
+.base {
+  display: block;
+  padding: 0 1.2rem;
+  > [class="inner"] {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
